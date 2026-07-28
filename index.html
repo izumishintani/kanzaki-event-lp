@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神崎が止まったら、何が止まるか。｜神崎高級工機 新卒採用イベント 9/25(金)</title>
+<meta name="description" content="船・建機・農機——世界の“動く”を支える縁の下のインフラ企業、神崎高級工機の1dayイベント。現場設計者とのランチ交流・工場見学・座談会。早期選考への第一歩。">
+<style>
+  :root{
+    --ink:#15181e;
+    --ink-2:#232833;
+    --steel:#3a4252;
+    --paper:#f6f5f1;
+    --white:#ffffff;
+    --amber:#f0a020;
+    --amber-deep:#d88a0a;
+    --blue:#2d6e8e;
+    --green:#4d7a4f;
+    --muted:#6b7280;
+    --line:#e3e1da;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Noto Sans JP",-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;}
+  a{color:inherit;}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  /* ===== header ===== */
+  .site-head{
+    position:sticky;top:0;z-index:100;
+    background:rgba(21,24,30,.92);backdrop-filter:blur(8px);
+    color:#fff;
+  }
+  .site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;}
+  .brand{font-weight:700;letter-spacing:.06em;font-size:15px;display:flex;align-items:center;gap:10px;}
+  .brand .gear{width:22px;height:22px;flex:none;}
+  .head-cta{
+    background:var(--amber);color:var(--ink);text-decoration:none;
+    font-weight:700;font-size:13px;padding:9px 20px;border-radius:999px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .head-cta:hover{background:#ffb63a;transform:translateY(-1px);}
+
+  /* ===== hero ===== */
+  .hero{
+    position:relative;color:#fff;overflow:hidden;
+    background:
+      radial-gradient(1100px 600px at 85% -10%, rgba(240,160,32,.16), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(45,110,142,.22), transparent 60%),
+      linear-gradient(160deg,#171a21 0%, #1d222c 55%, #232a37 100%);
+  }
+  .hero-inner{padding:88px 0 72px;position:relative;z-index:2;}
+  .hero .gears-bg{
+    position:absolute;right:-120px;top:50%;transform:translateY(-50%);
+    width:560px;opacity:.09;z-index:1;pointer-events:none;
+  }
+  .date-badge{
+    display:inline-flex;align-items:center;gap:6px 14px;flex-wrap:wrap;
+    border:1px solid rgba(255,255,255,.3);border-radius:999px;
+    padding:8px 22px;font-size:14px;letter-spacing:.08em;margin-bottom:32px;
+    background:rgba(255,255,255,.05);
+  }
+  .date-badge strong,.date-badge span{white-space:nowrap;}
+  .date-badge strong{color:var(--amber);font-size:16px;}
+  .hero h1{
+    font-size:clamp(34px,5.6vw,60px);
+    font-weight:800;line-height:1.4;letter-spacing:.02em;
+    margin-bottom:24px;
+  }
+  .hero h1 .accent{color:var(--amber);}
+  .hero .lead{
+    font-size:clamp(15px,1.8vw,18px);color:#c9cdd6;max-width:640px;margin-bottom:14px;
+  }
+  .hero .sub-lead{
+    font-size:14px;color:#9aa1ad;max-width:640px;margin-bottom:40px;
+  }
+  .hero-cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+  .btn-primary{
+    display:inline-block;background:var(--amber);color:var(--ink);
+    font-weight:800;font-size:17px;text-decoration:none;
+    padding:18px 52px;border-radius:999px;letter-spacing:.05em;
+    box-shadow:0 8px 24px rgba(240,160,32,.35);
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .btn-primary:hover{background:#ffb63a;transform:translateY(-2px);box-shadow:0 12px 30px rgba(240,160,32,.45);}
+  .hero-note{font-size:13px;color:#9aa1ad;}
+  .hero-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;}
+  .hero-tags span{
+    font-size:12.5px;border:1px solid rgba(255,255,255,.25);
+    padding:5px 14px;border-radius:6px;color:#d5d9e1;background:rgba(255,255,255,.04);
+  }
+
+  /* ===== section base ===== */
+  section{padding:88px 0;}
+  .sec-label{
+    display:block;font-size:13px;font-weight:700;letter-spacing:.22em;
+    color:var(--amber-deep);margin-bottom:14px;
+  }
+  .sec-title{
+    font-size:clamp(24px,3.4vw,36px);font-weight:800;line-height:1.5;margin-bottom:18px;letter-spacing:.02em;
+  }
+  .sec-desc{color:var(--muted);max-width:720px;font-size:15px;margin-bottom:48px;}
+
+  /* ===== concept ===== */
+  .concept{background:var(--white);}
+  .stop-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .stop-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:16px;
+    padding:36px 28px;text-align:center;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .stop-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(21,24,30,.08);}
+  .stop-card .icon{
+    width:72px;height:72px;border-radius:50%;margin:0 auto 20px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .stop-card .icon svg{width:36px;height:36px;}
+  .stop-card.sea .icon{background:rgba(45,110,142,.12);}
+  .stop-card.build .icon{background:rgba(240,160,32,.14);}
+  .stop-card.farm .icon{background:rgba(77,122,79,.12);}
+  .stop-card .prod{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin-bottom:8px;}
+  .stop-card h3{font-size:20px;font-weight:800;margin-bottom:12px;line-height:1.5;}
+  .stop-card p{font-size:14px;color:var(--muted);text-align:left;}
+  .concept-punch{
+    margin-top:56px;text-align:center;
+    font-size:clamp(18px,2.6vw,26px);font-weight:800;line-height:1.9;
+  }
+  .concept-punch .marker{
+    background:linear-gradient(transparent 62%, rgba(240,160,32,.45) 62%);
+    padding:0 4px;
+  }
+  .stat-row{display:flex;justify-content:center;gap:56px;margin-top:48px;flex-wrap:wrap;}
+  .stat{text-align:center;}
+  .stat .num{font-size:clamp(38px,5vw,56px);font-weight:800;color:var(--ink);line-height:1.2;}
+  .stat .num em{font-style:normal;color:var(--amber-deep);}
+  .stat .cap{font-size:13px;color:var(--muted);margin-top:6px;}
+
+  /* ===== about ===== */
+  .about{background:var(--paper);}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch;}
+  .about-card{
+    background:var(--white);border:1px solid var(--line);border-radius:16px;padding:38px 34px;
+    display:flex;flex-direction:column;
+  }
+  .about-card .co-tag{
+    display:inline-block;align-self:flex-start;font-size:12px;font-weight:800;letter-spacing:.12em;
+    padding:5px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .about-card.group .co-tag{background:rgba(45,110,142,.12);color:var(--blue);}
+  .about-card.kanzaki .co-tag{background:rgba(240,160,32,.16);color:var(--amber-deep);}
+  .about-card h3{font-size:22px;font-weight:800;margin-bottom:6px;letter-spacing:.02em;}
+  .about-card .co-sub{font-size:13px;color:var(--muted);margin-bottom:18px;}
+  .about-card p{font-size:14px;color:var(--steel);margin-bottom:16px;}
+  .about-facts{list-style:none;margin-top:auto;}
+  .about-facts li{
+    display:flex;gap:10px;align-items:baseline;font-size:13.5px;color:var(--steel);
+    padding:9px 0;border-top:1px dashed var(--line);
+  }
+  .about-facts li::before{content:"●";font-size:8px;color:var(--amber);flex:none;position:relative;top:-2px;}
+  .about-link-note{text-align:center;font-size:11.5px;color:var(--muted);margin-top:22px;}
+
+  /* ===== features ===== */
+  .features{background:var(--ink);color:#fff;}
+  .features .sec-label{color:var(--amber);}
+  .features .sec-desc{color:#9aa1ad;}
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .feat-card{
+    background:var(--ink-2);border:1px solid #323a48;border-radius:16px;padding:36px 30px;
+  }
+  .feat-card .no{
+    font-size:13px;font-weight:800;letter-spacing:.15em;color:var(--amber);margin-bottom:16px;display:block;
+  }
+  .feat-card h3{font-size:19px;font-weight:800;margin-bottom:14px;line-height:1.6;}
+  .feat-card p{font-size:14px;color:#b6bcc7;}
+
+  /* ===== timeline ===== */
+  .timeline-sec{background:var(--white);}
+  .tt{max-width:780px;margin:0 auto;}
+  .tt-item{
+    display:grid;grid-template-columns:150px 28px 1fr;gap:0 20px;position:relative;
+    padding-bottom:36px;
+  }
+  .tt-item:last-child{padding-bottom:0;}
+  .tt-time{font-weight:800;font-size:15px;color:var(--ink);text-align:right;letter-spacing:.02em;padding-top:2px;}
+  .tt-time small{display:block;font-weight:600;color:var(--muted);font-size:11.5px;letter-spacing:.05em;}
+  .tt-rail{position:relative;display:flex;justify-content:center;}
+  .tt-dot{
+    width:14px;height:14px;border-radius:50%;background:var(--amber);border:3px solid #fff;
+    box-shadow:0 0 0 2px var(--amber);z-index:2;margin-top:6px;flex:none;
+  }
+  .tt-item.rest .tt-dot{background:#c8c5bc;box-shadow:0 0 0 2px #c8c5bc;}
+  .tt-rail::after{
+    content:"";position:absolute;top:20px;bottom:-6px;width:2px;background:var(--line);
+  }
+  .tt-item:last-child .tt-rail::after{display:none;}
+  .tt-body h3{font-size:17px;font-weight:800;margin-bottom:6px;}
+  .tt-body p{font-size:14px;color:var(--muted);}
+  .tt-body .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+  .tt-body .chips span{
+    font-size:12px;background:var(--paper);border:1px solid var(--line);
+    padding:3px 12px;border-radius:999px;color:var(--steel);font-weight:600;
+  }
+  .tt-item.rest .tt-body h3{color:var(--muted);font-size:15px;}
+
+  /* ===== flow ===== */
+  .flow{background:var(--paper);}
+  .flow-steps{display:grid;grid-template-columns:1fr 56px 1fr 56px 1fr;align-items:stretch;gap:0;}
+  .flow-step{
+    background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px 26px;
+    display:flex;flex-direction:column;
+  }
+  .flow-step.goal{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .flow-step .step-tag{
+    font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--amber-deep);margin-bottom:12px;
+  }
+  .flow-step.goal .step-tag{color:var(--amber);}
+  .flow-step h3{font-size:18px;font-weight:800;margin-bottom:10px;line-height:1.6;}
+  .flow-step p{font-size:13.5px;color:var(--muted);}
+  .flow-step.goal p{color:#b6bcc7;}
+  .flow-arrow{display:flex;align-items:center;justify-content:center;color:var(--amber-deep);}
+  .flow-arrow svg{width:28px;height:28px;}
+  .flow-note{margin-top:28px;font-size:13px;color:var(--muted);text-align:center;}
+
+  /* ===== side events ===== */
+  .side-ev{background:var(--white);}
+
+  /* ===== mini info (理系向け別開催) ===== */
+  .side-ev{padding:56px 0;}
+  .mini-info{
+    background:var(--paper);border:1px solid var(--line);border-radius:16px;
+    padding:30px 34px;max-width:860px;margin:0 auto;
+  }
+  .mini-tag{
+    display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.1em;
+    background:rgba(45,110,142,.1);color:var(--blue);
+    padding:4px 14px;border-radius:999px;margin-bottom:12px;
+  }
+  .mini-info h3{font-size:17px;font-weight:800;margin-bottom:8px;}
+  .mini-info p{font-size:13.5px;color:var(--muted);}
+
+  /* ===== overview ===== */
+  .overview{background:var(--paper);}
+  .ov-table{width:100%;max-width:820px;margin:0 auto;border-collapse:collapse;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(21,24,30,.05);}
+  .ov-table th,.ov-table td{padding:20px 26px;font-size:14.5px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);}
+  .ov-table tr:last-child th,.ov-table tr:last-child td{border-bottom:none;}
+  .ov-table th{width:170px;background:#fbfaf7;font-weight:700;color:var(--steel);white-space:nowrap;}
+  .ov-table td strong{font-weight:800;}
+  .placeholder{
+    display:inline-block;background:#fdf3e0;border:1px dashed var(--amber-deep);color:var(--amber-deep);
+    font-size:12.5px;font-weight:700;padding:2px 10px;border-radius:6px;
+  }
+
+  /* ===== entry ===== */
+  .entry{
+    background:linear-gradient(150deg,#171a21, #232a37);color:#fff;text-align:center;
+    position:relative;overflow:hidden;
+  }
+  .entry .gears-bg{position:absolute;left:-140px;bottom:-140px;width:480px;opacity:.08;pointer-events:none;}
+  .entry h2{font-size:clamp(24px,3.6vw,38px);font-weight:800;line-height:1.6;margin-bottom:18px;position:relative;}
+  .entry p{color:#b6bcc7;font-size:15px;max-width:620px;margin:0 auto 40px;position:relative;}
+  .entry .btn-primary{font-size:18px;padding:20px 64px;}
+  .entry .cap{margin-top:20px;font-size:13px;color:#9aa1ad;}
+
+  /* ===== footer ===== */
+  footer{background:#101318;color:#9aa1ad;padding:36px 0;font-size:12.5px;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  footer .f-brand{color:#fff;font-weight:700;letter-spacing:.06em;}
+
+  /* ===== motion ===== */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+  @keyframes gearSpin{from{transform:translateY(-50%) rotate(0deg);}to{transform:translateY(-50%) rotate(360deg);}}
+  @keyframes gearSpinFlat{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+  @keyframes ctaGlow{
+    0%,100%{box-shadow:0 8px 24px rgba(240,160,32,.35);}
+    50%{box-shadow:0 8px 34px rgba(240,160,32,.6);}
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .hero .date-badge{animation:fadeUp .7s ease .05s both;}
+    .hero h1{animation:fadeUp .7s ease .18s both;}
+    .hero .lead{animation:fadeUp .7s ease .34s both;}
+    .hero .sub-lead{animation:fadeUp .7s ease .46s both;}
+    .hero .hero-cta-row{animation:fadeUp .7s ease .58s both;}
+    .hero .hero-tags{animation:fadeUp .7s ease .7s both;}
+    .hero .gears-bg{animation:gearSpin 90s linear infinite;}
+    .entry .gears-bg{animation:gearSpinFlat 90s linear infinite;}
+    .btn-primary{animation:ctaGlow 2.6s ease-in-out infinite;}
+    .brand .gear{animation:gearSpinFlat 12s linear infinite;}
+  }
+
+  /* ===== responsive ===== */
+  @media (max-width: 860px){
+    section{padding:64px 0;}
+    .stop-cards,.feat-grid,.about-grid{grid-template-columns:1fr;}
+    .mini-info{padding:24px 22px;}
+    .flow-steps{grid-template-columns:1fr;}
+    .flow-arrow{transform:rotate(90deg);padding:8px 0;}
+    .tt-item{grid-template-columns:86px 24px 1fr;gap:0 12px;}
+    .tt-time{font-size:13px;}
+    .ov-table th{width:110px;padding:16px 14px;}
+    .ov-table td{padding:16px 14px;}
+    .hero-inner{padding:64px 0 56px;}
+    .brand{font-size:12.5px;}
+    .date-badge{border-radius:16px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head">
+  <div class="wrap">
+    <div class="brand">
+      <svg class="gear" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 8.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm9.2 5.1-1.9-.4a7.4 7.4 0 0 1-.5 1.3l1.3 1.5a.8.8 0 0 1-.1 1.1l-1.4 1.4a.8.8 0 0 1-1.1.1l-1.5-1.3c-.4.2-.9.4-1.3.5l-.4 1.9a.8.8 0 0 1-.8.6h-2a.8.8 0 0 1-.8-.6l-.4-1.9c-.5-.1-.9-.3-1.3-.5l-1.5 1.3a.8.8 0 0 1-1.1-.1l-1.4-1.4a.8.8 0 0 1-.1-1.1l1.3-1.5a7.4 7.4 0 0 1-.5-1.3l-1.9-.4a.8.8 0 0 1-.6-.8v-2c0-.4.3-.7.6-.8l1.9-.4c.1-.5.3-.9.5-1.3L4.9 7.1A.8.8 0 0 1 5 6l1.4-1.4a.8.8 0 0 1 1.1-.1L9 5.8c.4-.2.9-.4 1.3-.5l.4-1.9a.8.8 0 0 1 .8-.6h2c.4 0 .7.3.8.6l.4 1.9c.5.1.9.3 1.3.5l1.5-1.3a.8.8 0 0 1 1.1.1L20 6a.8.8 0 0 1 .1 1.1l-1.3 1.5c.2.4.4.9.5 1.3l1.9.4c.4.1.6.4.6.8v2c0 .4-.3.7-.6.8Z" fill="#f0a020"/>
+      </svg>
+      神崎高級工機　新卒採用イベント
+    </div>
+    <a class="head-cta" href="#entry">参加申込</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <svg class="gears-bg" viewBox="0 0 200 200" fill="#fff" aria-hidden="true">
+    <path d="M100 60a40 40 0 1 0 0 80 40 40 0 0 0 0-80Zm0 62a22 22 0 1 1 0-44 22 22 0 0 1 0 44Z"/>
+    <g>
+      <rect x="94" y="30" width="12" height="22" rx="3"/><rect x="94" y="148" width="12" height="22" rx="3"/>
+      <rect x="30" y="94" width="22" height="12" rx="3"/><rect x="148" y="94" width="22" height="12" rx="3"/>
+      <rect x="49" y="43" width="12" height="22" rx="3" transform="rotate(-45 55 54)"/>
+      <rect x="139" y="43" width="12" height="22" rx="3" transform="rotate(45 145 54)"/>
+      <rect x="49" y="135" width="12" height="22" rx="3" transform="rotate(45 55 146)"/>
+      <rect x="139" y="135" width="12" height="22" rx="3" transform="rotate(-45 145 146)"/>
+    </g>
+  </svg>
+  <div class="wrap hero-inner">
+    <div class="date-badge"><strong>2026年9月25日（金）</strong><span>11:30 – 16:15</span><span>＠神崎高級工機</span></div>
+    <h1>神崎が止まったら、<br><span class="accent">何が止まるか。</span></h1>
+    <p class="lead">船が進む。建機が動く。トラクターが畑を駆ける。——その全部の“心臓部”を、実は尼崎の一社がつくっている。<br>答えは、ニュースにも教科書にも載っていない。<strong style="color:#fff;">工場の中にある。</strong></p>
+    <p class="sub-lead">普段は絶対に入れないものづくりの最前線へ。第一線のエンジニアと同じテーブルでランチを食べるところから始まる、ちょっと特別な1日です。</p>
+    <div class="hero-cta-row">
+      <a class="btn-primary" href="#entry">この1日を、体験する</a>
+      <span class="hero-note">参加無料・ランチ付き／服装自由・定員10名</span>
+    </div>
+    <div class="hero-tags">
+      <span># 文理・学年不問</span>
+      <span># 定員10名の少人数制</span>
+      <span># 工場見学あり</span>
+      <span># 開発部門の社員と直接話せる</span>
+      <span># 早期選考ルートあり</span>
+      <span># ヤンマーグループ</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONCEPT ============ -->
+<section class="concept">
+  <div class="wrap">
+    <span class="sec-label">CONCEPT</span>
+    <h2 class="sec-title">「KANZAKIが止まると、社会の何が止まる？」</h2>
+    <p class="sec-desc">神崎高級工機は、完成品の裏側で動力を伝える「トランスミッション・ギア」の専門メーカー。製品に社名は載らないけれど、もし止まれば、社会のこんなところが止まります。</p>
+
+    <div class="stop-cards">
+      <div class="stop-card sea">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2d6e8e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 20c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0 3-1 4.5 0"/>
+            <path d="M4 17l1.5-6h13L20 17"/>
+            <path d="M12 11V5l6 4"/>
+          </svg>
+        </div>
+        <div class="prod">マリンギア</div>
+        <h3>船が止まる。<br>物流が止まる。</h3>
+        <p>船舶の推進を担うマリンギア。海上輸送が担う貿易物流の裏側に、神崎の製品があります。</p>
+      </div>
+      <div class="stop-card build">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#d88a0a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="13" width="9" height="5" rx="1"/>
+            <circle cx="5" cy="20" r="1.4"/><circle cx="9" cy="20" r="1.4"/>
+            <path d="M11 14l4-7h3l2 5v2"/>
+            <path d="M15 7l-1.5 7"/>
+          </svg>
+        </div>
+        <div class="prod">トランスアクスル</div>
+        <h3>建機が止まる。<br>まちづくりが止まる。</h3>
+        <p>建設機械の足回りを支えるトランスアクスル。道路も建物も、動力伝達なしにはつくれません。</p>
+      </div>
+      <div class="stop-card farm">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4d7a4f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 21c0-6 2-10 8-13-1 7-3 11-8 13Z"/>
+            <path d="M12 21c0-4.5-1.5-7.5-6-9.5.8 5.2 2.3 8 6 9.5Z"/>
+            <path d="M12 21v-4"/>
+          </svg>
+        </div>
+        <div class="prod">農機用トランスミッション</div>
+        <h3>農機が止まる。<br>食料生産が止まる。</h3>
+        <p>国内外の農業機械やローントラクターの駆動を担い、世界の「食」の現場を動かしています。</p>
+      </div>
+    </div>
+
+    <p class="concept-punch">
+      製品に名前は出ない。でも、<span class="marker">世界は神崎のギアで回っている。</span><br>
+      その“縁の下のインフラ”の中身を、現場で確かめに来てください。
+    </p>
+
+    <div class="stat-row">
+      <div class="stat">
+        <div class="num"><em>3</em>領域</div>
+        <div class="cap">船舶・建機・農機の動力を支える</div>
+      </div>
+      <div class="stat">
+        <div class="num">約<em>9</em>割</div>
+        <div class="cap">北米向けローントラクター用IHTシェア※</div>
+      </div>
+      <div class="stat">
+        <div class="num"><em>YANMAR</em></div>
+        <div class="cap">ヤンマーグループの技術基盤</div>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:11.5px;color:var(--muted);margin-top:18px;">※ 社内資料に基づく参考値。正式な数値・出典は公開前にご確認ください。</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about">
+  <div class="wrap">
+    <span class="sec-label">ABOUT</span>
+    <h2 class="sec-title">ヤンマーグループ × 神崎高級工機</h2>
+    <p class="sec-desc">神崎高級工機は、ヤンマーグループの一員として動力伝達技術を担う専門メーカーです。グループの総合力と、専門メーカーならではの技術の深さ。その両方に触れられます。</p>
+
+    <div class="about-grid">
+      <div class="about-card group">
+        <span class="co-tag">GROUP</span>
+        <h3>ヤンマーグループ</h3>
+        <p class="co-sub">YANMAR — A SUSTAINABLE FUTURE</p>
+        <p>1912年創業。1933年に世界で初めて小型ディーゼルエンジンの実用化に成功して以来、「食料生産」と「エネルギー変換」の領域を軸に、農業機械・建設機械・マリン・エネルギーシステムなどをグローバルに展開しています。</p>
+        <ul class="about-facts">
+          <li>創業100年を超える老舗グローバルメーカー</li>
+          <li>世界初の小型ディーゼルエンジン実用化（1933年）</li>
+          <li>農機・建機・マリン・エネルギーを世界展開</li>
+        </ul>
+      </div>
+      <div class="about-card kanzaki">
+        <span class="co-tag">KANZAKI</span>
+        <h3>株式会社 神崎高級工機製作所</h3>
+        <p class="co-sub">動力を伝える「トランスミッション・ギア」の専門メーカー</p>
+        <p>兵庫県尼崎市に本社を置き、マリンギア・トランスアクスル・農機用トランスミッション・油圧機器などを開発から製造まで一貫して手がけています。米ジョンディア社をはじめ、世界の完成機メーカーの製品の“中身”を支えています。</p>
+        <ul class="about-facts">
+          <li>本社：兵庫県尼崎市（阪急園田駅エリア）</li>
+          <li>北米向けローントラクター用IHTシェア約9割※</li>
+          <li>油圧から電動化・自動化へ、開発の最前線</li>
+        </ul>
+      </div>
+    </div>
+    <p class="about-link-note">※ 社内資料に基づく参考値。会社概要の数値・沿革は、公開前に各社公式サイトの最新情報をご確認ください。</p>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features">
+  <div class="wrap">
+    <span class="sec-label">FEATURES</span>
+    <h2 class="sec-title">ここでしか、できない体験を。</h2>
+    <p class="sec-desc">スライドを眺めるだけの説明会なら、家でも受けられます。この日ここでしか味わえないのは——</p>
+    <div class="feat-grid">
+      <div class="feat-card">
+        <span class="no">FEATURE 01</span>
+        <h3>エンジニアと、<br>同じテーブルでランチを</h3>
+        <p>初対面の挨拶が終わる頃には、もう技術の話で盛り上がっている。世界を相手に設計しているエンジニアの「好きでやってる感」は、隣の席だから伝わります。</p>
+      </div>
+      <div class="feat-card">
+        <span class="no">FEATURE 02</span>
+        <h3>巨大なギアが生まれる瞬間を、<br>目の前で</h3>
+        <p>ミクロン単位で削り出される歯車、組み上がっていくトランスミッション。写真では絶対に伝わらないスケールと音を、五感で浴びる50分。ここが世界の“動く”の源流です。</p>
+      </div>
+      <div class="feat-card">
+        <span class="no">FEATURE 03</span>
+        <h3>あなたの「なぜ？」に、<br>その場で答えが返ってくる</h3>
+        <p>「完全自動化って、あと何が足りないんですか？」——素朴な疑問も大胆な仮説も大歓迎。現場のプロが「それはね」と本気で返してくれる1時間は、就活で一番濃い時間になるはず。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="timeline-sec">
+  <div class="wrap">
+    <span class="sec-label">TIME TABLE</span>
+    <h2 class="sec-title">当日の流れ｜9月25日（金）</h2>
+    <p class="sec-desc">ランチで始まり、座談会で締めくくる。“お客様”としてではなく、“未来の仲間候補”として過ごす1日です。</p>
+
+    <div class="tt">
+      <div class="tt-item">
+        <div class="tt-time">11:30<small>– 13:00</small></div>
+        <div class="tt-rail"><div class="tt-dot"></div></div>
+        <div class="tt-body">
+          <h3>ランチ＆自己紹介</h3>
+          <p>開発部門の担当社員と一緒にランチ。まずはお互いを知るところから、リラックスして始めます。</p>
+          <div class="chips"><span>ランチ付き</span><span>開発部門社員が同席</span></div>
+        </div>
+      </div>
+      <div class="tt-item">
+        <div class="tt-time">13:00<small>– 13:50</small></div>
+        <div class="tt-rail"><div class="tt-dot"></div></div>
+        <div class="tt-body">
+          <h3>会社説明・開発の話・地域との関わり</h3>
+          <p>会社説明（15分）に続き、開発について（20分）、環境や地域の方々との交流について（15分）。“縁の下のインフラ”の全体像をつかみます。</p>
+          <div class="chips"><span>会社説明 15分</span><span>開発 20分</span><span>環境・地域交流 15分</span></div>
+        </div>
+      </div>
+      <div class="tt-item rest">
+        <div class="tt-time">13:50<small>– 14:00</small></div>
+        <div class="tt-rail"><div class="tt-dot"></div></div>
+        <div class="tt-body"><h3>休憩・工場見学の準備</h3></div>
+      </div>
+      <div class="tt-item">
+        <div class="tt-time">14:00<small>– 14:50</small></div>
+        <div class="tt-rail"><div class="tt-dot"></div></div>
+        <div class="tt-body">
+          <h3>工場見学</h3>
+          <p>いよいよ、普段は入れない現場へ。世界へ出荷されるギア・トランスミッションが生まれる瞬間を、自分の目と耳で確かめてください。</p>
+          <div class="chips"><span>ここがハイライト</span><span>五感で体感</span></div>
+        </div>
+      </div>
+      <div class="tt-item rest">
+        <div class="tt-time">14:50<small>– 15:00</small></div>
+        <div class="tt-rail"><div class="tt-dot"></div></div>
+        <div class="tt-body"><h3>休憩</h3></div>
+      </div>
+      <div class="tt-item">
+        <div class="tt-time">15:00<small>– 16:00</small></div>
+        <div class="tt-rail"><div class="tt-dot"></div></div>
+        <div class="tt-body">
+          <h3>質疑応答＆座談会</h3>
+          <p>見学で感じた疑問を、現場社員に直接ぶつける1時間。キャリアのこと、技術のこと、何でもどうぞ。</p>
+          <div class="chips"><span>少人数座談会</span><span>本音ベース</span></div>
+        </div>
+      </div>
+      <div class="tt-item">
+        <div class="tt-time">16:00<small>– 16:15</small></div>
+        <div class="tt-rail"><div class="tt-dot"></div></div>
+        <div class="tt-body">
+          <h3>クロージング＆アンケート</h3>
+          <p>今後のご案内（仕事体験・早期選考など）をお伝えして終了です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLOW ============ -->
+<section class="flow">
+  <div class="wrap">
+    <span class="sec-label">NEXT STEP</span>
+    <h2 class="sec-title">参加後は、早期選考への最短ルートへ。</h2>
+    <p class="sec-desc">このイベントは“聞いて終わり”ではありません。参加者には、次のステップを個別にご案内します。</p>
+
+    <div class="flow-steps">
+      <div class="flow-step">
+        <span class="step-tag">STEP 1｜9/25（金）</span>
+        <h3>1dayイベントに参加</h3>
+        <p>ランチ交流・工場見学・座談会で、神崎高級工機のリアルを知る。</p>
+      </div>
+      <div class="flow-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </div>
+      <div class="flow-step">
+        <span class="step-tag">STEP 2｜10月以降・文理不問</span>
+        <h3>仕事体験 または 会社説明会</h3>
+        <p>週1回程度のペースで開催。都合に合わせて、どちらかに参加できます。</p>
+      </div>
+      <div class="flow-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </div>
+      <div class="flow-step goal">
+        <span class="step-tag">STEP 3</span>
+        <h3>早期選考へ</h3>
+        <p>参加者限定で早期選考ルートをご案内。一般選考より早く、内定への一歩を。</p>
+      </div>
+    </div>
+    <p class="flow-note">※ STEP 2以降のご案内は、イベント終了時のクロージングおよびアンケートを通じてお知らせします。</p>
+  </div>
+</section>
+
+<!-- ============ SIDE EVENTS ============ -->
+<section class="side-ev">
+  <div class="wrap">
+    <div class="mini-info">
+      <div>
+        <span class="mini-tag">理系学生向け・別開催</span>
+        <h3>技術職の仕事体験コースも開催しています</h3>
+        <p>「開発部 電動モーター試験体験」「CADを使った生産技術体験」の2コース。本社での工場見学・実務体験・先輩社員座談会を、少人数で体験できます（交通費・昼食あり）。ご興味のある方には日程などの詳細を個別にご案内します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="overview">
+  <div class="wrap">
+    <span class="sec-label">OVERVIEW</span>
+    <h2 class="sec-title">開催概要</h2>
+    <p class="sec-desc">お申し込み前にご確認ください。</p>
+
+    <table class="ov-table">
+      <tr><th>イベント名</th><td><strong>神崎高級工機 1day 会社体感イベント</strong>「神崎が止まったら、何が止まるか」</td></tr>
+      <tr><th>日時</th><td><strong>2026年9月25日（金）11:30 – 16:15</strong>（11:15 受付開始）</td></tr>
+      <tr><th>会場</th><td><strong>株式会社 神崎高級工機製作所</strong><br>〒661-0981 兵庫県尼崎市猪名寺2丁目18-1</td></tr>
+      <tr><th>内容</th><td>ランチ交流／会社説明・開発紹介／工場見学／質疑応答・座談会</td></tr>
+      <tr><th>対象</th><td>文系・理系、学年問わず<br>社会インフラ・ものづくり・機械に関心のある学生</td></tr>
+      <tr><th>定員</th><td><strong>最大10名</strong>（少人数開催）</td></tr>
+      <tr><th>参加費</th><td>無料（ランチ付き）</td></tr>
+      <tr><th>服装・持ち物</th><td>服装自由。工場見学のため、歩きやすい靴でお越しください。</td></tr>
+      <tr><th>申込方法</th><td>本ページ下部の「参加を申し込む」ボタンよりお申し込みください。</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ ENTRY ============ -->
+<section class="entry" id="entry">
+  <svg class="gears-bg" viewBox="0 0 200 200" fill="#fff" aria-hidden="true">
+    <path d="M100 60a40 40 0 1 0 0 80 40 40 0 0 0 0-80Zm0 62a22 22 0 1 1 0-44 22 22 0 0 1 0 44Z"/>
+    <g>
+      <rect x="94" y="30" width="12" height="22" rx="3"/><rect x="94" y="148" width="12" height="22" rx="3"/>
+      <rect x="30" y="94" width="22" height="12" rx="3"/><rect x="148" y="94" width="22" height="12" rx="3"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <h2>9月25日、<br>あなたの就活の“景色”が変わる。</h2>
+    <p>朝までは名前も知らなかった会社が、帰り道には「また来たい会社」になっている——そんな1日をつくって待っています。席は10名分だけ。エントリーは数分で完了します。</p>
+    <a class="btn-primary" href="#" onclick="alert('申込フォームのURLは確定後に設定します'); return false;">この1日を、体験する</a>
+    <p class="cap">申込フォームURL：<span class="placeholder" style="background:rgba(240,160,32,.12);">確定後に差し替え</span>　／　応募締切：<span class="placeholder" style="background:rgba(240,160,32,.12);">確定後に記載</span></p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="f-brand">株式会社 神崎高級工機製作所　新卒採用</div>
+    <div>本ページは採用イベント告知用の制作中ドラフトです。</div>
+  </div>
+</footer>
+
+</body>
+</html>
