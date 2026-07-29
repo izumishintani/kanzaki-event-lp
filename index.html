@@ -143,6 +143,31 @@
   .stat .num em{font-style:normal;color:var(--amber-deep);}
   .stat .cap{font-size:13px;color:var(--muted);margin-top:6px;}
 
+  /* ===== why now (AI時代) ===== */
+  .whynow{
+    background:
+      radial-gradient(900px 500px at 90% 0%, rgba(240,160,32,.1), transparent 60%),
+      linear-gradient(160deg,#1a1e27 0%, #232a37 100%);
+    color:#fff;
+  }
+  .whynow .sec-label{color:var(--amber);}
+  .whynow .sec-desc{color:#9aa1ad;}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .why-card{
+    background:rgba(255,255,255,.04);border:1px solid #323a48;border-radius:16px;
+    padding:38px 34px;
+  }
+  .why-card .why-no{
+    display:block;font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--amber);margin-bottom:16px;
+  }
+  .why-card h3{font-size:clamp(19px,2.3vw,23px);font-weight:800;line-height:1.75;margin-bottom:16px;}
+  .why-card h3 em{font-style:normal;color:var(--amber);}
+  .why-card p{font-size:14px;color:#b6bcc7;}
+  .why-close{
+    text-align:center;margin-top:48px;font-size:clamp(16px,2.2vw,21px);font-weight:800;line-height:2;
+  }
+  .why-close em{font-style:normal;color:var(--amber);}
+
   /* ===== about ===== */
   .about{background:var(--paper);}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch;}
@@ -298,7 +323,7 @@
   /* ===== responsive ===== */
   @media (max-width: 860px){
     section{padding:64px 0;}
-    .stop-cards,.feat-grid,.about-grid{grid-template-columns:1fr;}
+    .stop-cards,.feat-grid,.about-grid,.why-grid{grid-template-columns:1fr;}
     .mini-info{padding:24px 22px;}
     .flow-steps{grid-template-columns:1fr;}
     .flow-arrow{transform:rotate(90deg);padding:8px 0;}
@@ -347,7 +372,7 @@
     <p class="sub-lead">普段は絶対に入れないものづくりの最前線へ。第一線のエンジニアと同じテーブルでランチを食べるところから始まる、ちょっと特別な1日です。</p>
     <div class="hero-cta-row">
       <a class="btn-primary" href="#entry">この1日を、体験する</a>
-      <span class="hero-note">参加無料・ランチ付き／服装自由・定員10名</span>
+      <span class="hero-note">参加無料・交通費支給・ランチ付き／服装自由・定員10名</span>
     </div>
     <div class="hero-tags">
       <span># 文理・学年不問</span>
@@ -430,6 +455,30 @@
   </div>
 </section>
 
+<!-- ============ WHY NOW ============ -->
+<section class="whynow">
+  <div class="wrap">
+    <span class="sec-label">WHY NOW</span>
+    <h2 class="sec-title">AIの時代に、なぜ“現場”なのか。</h2>
+    <p class="sec-desc">なんでもAIが答えてくれる時代に、わざわざ工場まで足を運ぶ理由があります。</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="why-no">REASON 01</span>
+        <h3>情報はAIが運べる。<br>でも<em>モノを運ぶ</em>のは、機械と物流。</h3>
+        <p>半導体も、食料も、あなたのスマホも——世界中のモノは、いまも船が運び、機械が動かしています。AIやデータセンターでさえ、部品が海を渡らなければ生まれません。デジタルが進むほど、それを支える物流・ものづくりの価値はむしろ上がっていく。その最前線が、ここにあります。</p>
+      </div>
+      <div class="why-card">
+        <span class="why-no">REASON 02</span>
+        <h3>「検索した」と<em>「この目で見た」</em>は、<br>まったく別の経験。</h3>
+        <p>工場の音、ギアのスケール、エンジニアの熱量。現場で浴びた一次情報は、AIには出力できない、あなただけの言葉になります。だからこのイベントは、画面越しではなく現地開催。自分の足で歩いて、確かめてください。</p>
+      </div>
+    </div>
+
+    <p class="why-close">AIが進むほど、<em>現場を知っている人</em>の価値は上がる。<br>その現場を、いちばん近くで見に行こう。</p>
+  </div>
+</section>
+
 <!-- ============ ABOUT ============ -->
 <section class="about">
   <div class="wrap">
@@ -485,7 +534,7 @@
       <div class="feat-card">
         <span class="no">FEATURE 03</span>
         <h3>あなたの「なぜ？」に、<br>その場で答えが返ってくる</h3>
-        <p>「完全自動化って、あと何が足りないんですか？」——素朴な疑問も大胆な仮説も大歓迎。現場のプロが「それはね」と本気で返してくれる1時間は、就活で一番濃い時間になるはず。</p>
+        <p>「完全自動化って、あと何が足りないんですか？」——素朴な疑問も大胆な仮説も大歓迎。現場のプロが「それはね」と本気で返してくれる。教科書より、検索より、ずっと濃い1時間です。</p>
       </div>
     </div>
   </div>
@@ -619,6 +668,7 @@
       <tr><th>対象</th><td>文系・理系、学年問わず<br>社会インフラ・ものづくり・機械に関心のある学生</td></tr>
       <tr><th>定員</th><td><strong>最大10名</strong>（少人数開催）</td></tr>
       <tr><th>参加費</th><td>無料（ランチ付き）</td></tr>
+      <tr><th>交通費</th><td>支給あり</td></tr>
       <tr><th>服装・持ち物</th><td>服装自由。工場見学のため、歩きやすい靴でお越しください。</td></tr>
       <tr><th>申込方法</th><td>本ページ下部の「参加を申し込む」ボタンよりお申し込みください。</td></tr>
     </table>
@@ -635,8 +685,8 @@
     </g>
   </svg>
   <div class="wrap">
-    <h2>9月25日、<br>あなたの就活の“景色”が変わる。</h2>
-    <p>朝までは名前も知らなかった会社が、帰り道には「また来たい会社」になっている——そんな1日をつくって待っています。席は10名分だけ。エントリーは数分で完了します。</p>
+    <h2>9月25日、<br>世界の見え方が、少し変わる。</h2>
+    <p>朝までは名前も知らなかった場所が、帰り道には「また来たい」に変わっている——そんな1日をつくって待っています。席は10名分。お申し込みは数分で完了します。</p>
     <a class="btn-primary" href="#" onclick="alert('申込フォームのURLは確定後に設定します'); return false;">この1日を、体験する</a>
     <p class="cap">申込フォームURL：<span class="placeholder" style="background:rgba(240,160,32,.12);">確定後に差し替え</span>　／　応募締切：<span class="placeholder" style="background:rgba(240,160,32,.12);">確定後に記載</span></p>
   </div>
